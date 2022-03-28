@@ -205,9 +205,6 @@ body {
   width: calc(33.3333333333% - 48px);
 }
 
-/* Dark Body
-================================================== */
-
 body.dark .bl-main>section:nth-child(4).bl-expand .contact .leftside { background-color: #111; }
 body.dark {
   background-image: url('../images/bg.jpg');
@@ -2007,8 +2004,7 @@ body.blog .pagination li a i {
   }
 
   .bl-main>section.topleft {
-    height: auto;
-    top: 20%;
+    top: 0%;
   }
 
   .bl-main>section:nth-child(2):not(.bl-expand) {
