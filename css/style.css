@@ -101,7 +101,7 @@ body {
 .btn {
   font-family: 'Lato', sans-serif, Calibri, Arial;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 16px;
   font-weight: 600;
   height: 42px;
 }
@@ -203,6 +203,11 @@ body {
   background-size: cover;
   background-position: center center;
   width: calc(33.3333333333% - 48px);
+  border-radius: 15px;
+}
+
+#bl-profile-section, #bl-work-section, #bl-contact-section {
+  border-radius: 16px;
 }
 
 body.dark .bl-main>section:nth-child(4).bl-expand .contact .leftside { background-color: #111; }
@@ -1945,6 +1950,8 @@ body.blog .pagination li a i {
 
 
 /*================================================== */
+
+.hello { box-shadow: 1px 1px 3px black; }
 
 @media (max-width:1399px) {
   .page-title h2 {
