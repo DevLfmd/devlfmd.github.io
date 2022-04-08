@@ -18,20 +18,24 @@
 		}));
 
         $(".contactform").on("submit", function() {
-            $(".output_message").text("Loading...");
+            $(".output_message").text("Enviando...");
 
             var form = $(this);
             $.ajax({
                 url: form.attr("action"),
                 method: form.attr("method"),
+                headers: {
+                    'Accept': 'application/json'
+                },
                 data: form.serialize(),
                 success: function(result) {
-                    if (result == "success") {
+                    if (result.ok == true) {
                         $(".contactform").find(".output_message").addClass("success");
-                        $(".output_message").text("Message Sent!");
+                        $(".output_message").text("Mensagem enviada!");
+                        $('.contactform').trigger("reset");
                     } else {
                         $(".contactform").find(".output_message").addClass("error");
-                        $(".output_message").text("Error Sending!");
+                        $(".output_message").text("Erro ao enviar mensagem, tente novamente");
                     }
                 }
             });
