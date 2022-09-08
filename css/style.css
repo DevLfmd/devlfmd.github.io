@@ -2340,3 +2340,8 @@ body.blog .pagination li a i {
   }
   
 }
+
+.habilidades {
+  max-height: 465px;
+  overflow: scroll;
+}
