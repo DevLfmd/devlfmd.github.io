@@ -2345,3 +2345,5 @@ body.blog .pagination li a i {
   max-height: 465px;
   overflow: scroll;
 }
+
+.job-photo { height: 184px; }
